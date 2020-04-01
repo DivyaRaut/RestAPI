@@ -57,8 +57,8 @@ app.put("/api/customers/:id", (req, res) => {
     res.status(400).send(error.details[0].message);
     return;
   }
-  customer.titlereq.body.title;
-  req.send(customer);
+  customer.title=req.body.title;
+  res.send(customer);
 });
 //Delete
 app.put("/api/customers/:id", (req, res) => {
